@@ -305,17 +305,29 @@ To reset all local demo data, open **Settings → Clear inspection history**, or
 
 ## 11. Screenshots
 
-Screenshots are not stored in this repository yet. Add images to `docs/screenshots/` and replace the
-placeholders below.
+All screenshots below were captured from the live demo at
+**https://vision-inspect-ai-dkvvr8.freebuff.site** (desktop viewport, 1440 × 900). They show **demo output**:
+every view carries a `DEMO MODE`, `DEMO DATA` or `DEMO OUTPUT` badge, and the figures come from seeded local
+records rather than from a trained model.
 
-| View | Preview |
-| --- | --- |
-| Dashboard — KPIs, analytics and recent activity | _`docs/screenshots/dashboard.png` — placeholder_ |
-| Inspection workstation — upload and configuration | _`docs/screenshots/inspect.png` — placeholder_ |
-| Results console — four visual outputs and regions | _`docs/screenshots/results.png` — placeholder_ |
-| History — search, filters and report export | _`docs/screenshots/history.png` — placeholder_ |
-| Dataset explorer — VisA subsets | _`docs/screenshots/dataset.png` — placeholder_ |
-| Mobile layout — off-canvas navigation | _`docs/screenshots/mobile.png` — placeholder_ |
+### Dashboard — KPIs, analytics and recent activity
+
+![Dashboard showing demo KPIs, inspection analytics and recent activity](docs/screenshots/dashboard.png)
+
+### Results console — anomaly score, regions and the visual outputs
+
+![Inspection results showing a DEMO output badge, anomaly score, defect location and the original image beside the anomaly heatmap](docs/screenshots/results.png)
+
+### Inspection history — search, filters and report export
+
+![Inspection history table with DEMO RECORDS badge, filters and per-row export actions](docs/screenshots/history.png)
+
+### Dataset explorer — VisA subsets and class balance
+
+![Dataset overview showing VisA image counts, per-subset bars and class balance](docs/screenshots/dataset.png)
+
+> Not captured yet: the New Inspection workstation and the mobile layout. The remaining views can be added
+the same way, as `docs/screenshots/inspect.png` and `docs/screenshots/mobile.png`.
 
 ---
 
