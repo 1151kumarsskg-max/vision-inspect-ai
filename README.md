@@ -164,9 +164,12 @@ flowchart LR
     UI --> Store
     UI --> Demo
     UI --> Report
-    UI -.->|"REST contract in src/lib/api.ts"| API
+    UI -.-> API
     API -.-> Model
 ```
+
+_Dotted edges are planned, not implemented: the REST contract that will connect the UI to the backend
+lives in `src/lib/api.ts`._
 
 **Layered structure**
 
