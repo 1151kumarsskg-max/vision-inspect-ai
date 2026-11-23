@@ -150,21 +150,21 @@ in `src/components/ui.tsx`.
 ```mermaid
 flowchart LR
     subgraph Browser["Browser (this repository)"]
-        UI[React pages<br/>Dashboard · Inspect · Results<br/>History · Dataset · Model · Settings]
-        Store[localStorage adapter<br/>src/lib/storage.ts]
-        Demo[Demo analysis engine<br/>Canvas 2D · src/lib/demoAnalysis.ts]
-        Report[PDF generator<br/>jsPDF · src/lib/report.ts]
+        UI["React pages<br/>Dashboard, Inspect, Results<br/>History, Dataset, Model, Settings"]
+        Store["localStorage adapter<br/>src/lib/storage.ts"]
+        Demo["Demo analysis engine<br/>Canvas 2D, src/lib/demoAnalysis.ts"]
+        Report["PDF generator<br/>jsPDF, src/lib/report.ts"]
     end
 
     subgraph Planned["Planned backend (not implemented)"]
-        API[FastAPI service]
-        Model[Feature extractor + memory bank<br/>anomaly scoring · region growing]
+        API["FastAPI service"]
+        Model["Feature extractor and memory bank<br/>anomaly scoring, region growing"]
     end
 
     UI --> Store
     UI --> Demo
     UI --> Report
-    UI -. HTTP contract in src/lib/api.ts .-> API
+    UI -.->|"REST contract in src/lib/api.ts"| API
     API -.-> Model
 ```
 
